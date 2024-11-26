@@ -13,15 +13,31 @@ function App() {
         <h2>Current Tasks</h2>
         {/* map sull' array di task da completare */}
         {incompleteTasks.map((task, index) => {
-          return [<li key={index}>{task.title}</li>];
+          return (
+            <li key={index}>
+              <div className="task">{task.title}</div>
+              <div className="priority">Priority: {task.priority}</div>
+              <div className="estimated-time">
+                Estimated Time: {task.estimatedTime}
+              </div>
+            </li>
+          );
         })}
       </ul>
       {/* task completate */}
-      <ul>
+      <ul className="task-list">
         <h2>Completed Tasks</h2>
         {/*  */}
         {completedTasks.map((task, index) => {
-          return <li key={index}>{task.title}</li>;
+          return (
+            <li key={index}>
+              <div className="task">{task.title}</div>
+              <div className="priority">Priority: {task.priority}</div>
+              <div className="estimated-time">
+                Estimated Time: {task.estimatedTime}
+              </div>
+            </li>
+          );
         })}
       </ul>
     </div>
