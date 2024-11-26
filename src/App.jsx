@@ -15,11 +15,11 @@ function App() {
         {incompleteTasks.map((task, index) => {
           return (
             <li key={index}>
-              <div className="task">{task.title}</div>
-              <div className="priority">Priority: {task.priority}</div>
-              <div className="estimated-time">
+              <p className="task">{task.title}</p>
+              <p className="priority">Priority: {task.priority}</p>
+              <p className="estimated-time">
                 Estimated Time: {task.estimatedTime}
-              </div>
+              </p>
             </li>
           );
         })}
@@ -31,11 +31,11 @@ function App() {
         {completedTasks.map((task, index) => {
           return (
             <li key={index}>
-              <div className="task">{task.title}</div>
-              <div className="priority">Priority: {task.priority}</div>
-              <div className="estimated-time">
+              <p className="task">{task.title}</p>
+              <p className="priority">Priority: {task.priority}</p>
+              <p className="estimated-time">
                 Estimated Time: {task.estimatedTime}
-              </div>
+              </p>
             </li>
           );
         })}
