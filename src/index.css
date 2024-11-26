@@ -9,6 +9,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --done-color: #069c56;
+  --in-progress-color: #ff980e;
+  --todo-color: #d3212c;
 }
 
 * {
