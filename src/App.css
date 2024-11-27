@@ -4,17 +4,24 @@
   --todo-color: #d3212c;
 }
 
+header {
+  background-color: aquamarine;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
+h1,
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.task-list > li {
+.task-list>li {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -44,15 +51,17 @@ h2 {
 .task-done {
   background-color: var(--done-color);
 }
+
 .task-in-progress {
   background-color: var(--in-progress-color);
 }
+
 .task-todo {
   background-color: var(--todo-color);
 }
 
 @media screen and (max-width: 542px) {
-  .task-list > li {
+  .task-list>li {
     flex-wrap: wrap;
   }
 
