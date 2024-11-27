@@ -1,3 +1,9 @@
+:root {
+  --done-color: #069c56;
+  --in-progress-color: #ff980e;
+  --todo-color: #d3212c;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -7,14 +13,6 @@
 h2 {
   margin-bottom: 1rem;
 }
-
-/* .task-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  row-gap: 1rem;
-} */
 
 .task-list > li {
   display: flex;
@@ -53,7 +51,7 @@ h2 {
   background-color: var(--todo-color);
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 542px) {
   .task-list > li {
     flex-wrap: wrap;
   }
