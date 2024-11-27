@@ -11,7 +11,7 @@ function App() {
     <>
       <header>
         <div className="container">
-          <h1>Task Manager</h1>
+          <h1 className="page-title">Task Manager</h1>
         </div>
       </header>
 

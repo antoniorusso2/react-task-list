@@ -10,6 +10,10 @@ header {
   margin-bottom: 1.5rem;
 }
 
+.page-title {
+  font-size: 4rem;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
